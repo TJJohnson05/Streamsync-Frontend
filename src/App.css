@@ -57,5 +57,12 @@ body, html, #root {
   text-align: center;
 }
 
-
+.link-btn {
+ Background: none;
+ border: none;
+ color:#93c5fd;
+ cursor: pointer;
+ text-decoration: underline;
+ font-size: 14px;
+}
 
