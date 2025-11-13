@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles/WatchStream.css';
 import { useParams } from 'react-router-dom';
 import ChatBox from '../components/ChatBox';
-import Navbar from '../components/Navbar';
 
 export default function WatchStream() {
   const { streamId } = useParams(); // For dynamic routing later
@@ -19,7 +18,6 @@ export default function WatchStream() {
 
   return (
     <div className="watch-page">
-      <Navbar />
 
       <div className="watch-content">
         <div className="video-section">

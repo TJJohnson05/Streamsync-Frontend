@@ -6,6 +6,8 @@ import SignUp from './pages/SignUp';
 import WatchStream from './pages/WatchStream';
 import Navbar from './components/Navbar';
 import NotFound from './pages/NotFound';
+import Browse from './pages/Browse';
+
 
 // Wrapper component so we can use useLocation() with Router
 function AppContent() {
@@ -24,7 +26,8 @@ function AppContent() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/home" element={<Home />} />
         <Route path="/watch/:streamId" element={<WatchStream />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} />	
+	<Route path="/browse" element={<Browse />} />
       </Routes>
     </>
   );
@@ -37,4 +40,5 @@ export default function App() {
     </Router>
   );
 }
+
 
