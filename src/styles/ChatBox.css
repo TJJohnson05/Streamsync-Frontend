@@ -1,0 +1,50 @@
+.chatbox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chatbox h3 {
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #8244ff;
+}
+
+.messages {
+  flex: 1;
+  margin-top: 0.5rem;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.message {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.chat-input {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.chat-input button {
+  background-color: #8244ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #6d36d8;
+}
+
