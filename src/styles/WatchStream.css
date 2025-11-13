@@ -1,71 +1,69 @@
 .watch-page {
+  background-color: #0e0e10;
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px 40px;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  background-color: #f9f9f9;
+  align-items: center;
 }
 
 .watch-content {
   display: flex;
-  flex: 1;
-  margin-top: 60px; /* to make room for navbar */
-  height: calc(100vh - 60px);
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  max-width: 1400px;
+  gap: 30px;
 }
 
 .video-section {
   flex: 3;
-  padding: 1rem 2rem;
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-}
-
-.video-player {
-  width: 100%;
-  aspect-ratio: 16/9;
-  background-color: #000;
-  border-radius: 12px;
-  overflow: hidden;
+  background-color: #18181b;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
 .video-player img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  border-radius: 10px;
 }
 
 .stream-details {
-  margin-top: 1rem;
+  margin-top: 15px;
 }
 
-.stream-details h2 {
-  margin: 0;
-  font-size: 1.4rem;
-  font-weight: 700;
+.stream-title {
+  color: #a970ff;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
 }
 
 .streamer-name {
-  color: #8244ff;
-  font-weight: 500;
-  margin-top: 0.3rem;
+  color: #ccc;
+  margin-bottom: 5px;
 }
 
 .viewers {
-  color: #666;
   font-size: 0.9rem;
-  margin-top: 0.2rem;
+  color: #777;
+  margin-bottom: 15px;
 }
 
 .description {
-  margin-top: 0.8rem;
-  color: #333;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #ddd;
 }
 
 .chat-section {
-  flex: 1.1;
-  border-left: 1px solid #ddd;
-  background-color: #fff;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
+  flex: 1;
+  background-color: #18181b;
+  border-radius: 10px;
+  padding: 15px;
+  height: fit-content;
+  max-height: 700px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }

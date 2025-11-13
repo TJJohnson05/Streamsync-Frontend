@@ -4,10 +4,11 @@ import { useParams } from 'react-router-dom';
 import ChatBox from '../components/ChatBox';
 
 export default function WatchStream() {
-  const { streamId } = useParams(); // For dynamic routing later
+  const { streamId } = useParams(); // for dynamic routing later
 
-  // Temporary placeholder data
+  // Temporary placeholder data (could be replaced with a fetch later)
   const stream = {
+    id: streamId,
     title: 'Live Coding Session: Building StreamSync',
     streamer: 'TylerDev',
     viewers: 245,
@@ -18,15 +19,14 @@ export default function WatchStream() {
 
   return (
     <div className="watch-page">
-
       <div className="watch-content">
         <div className="video-section">
           <div className="video-player">
-            <img src={stream.thumbnail} alt="Stream thumbnail" />
+            <img src={stream.thumbnail} alt="Stream preview" />
           </div>
 
           <div className="stream-details">
-            <h2>{stream.title}</h2>
+            <h2 className="stream-title">{stream.title}</h2>
             <p className="streamer-name">@{stream.streamer}</p>
             <p className="viewers">{stream.viewers} watching</p>
             <p className="description">{stream.description}</p>
