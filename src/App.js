@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import NotFound from './pages/NotFound';
 import Browse from './pages/Browse';
 import Profile from './pages/Profile';
+import SearchResults from './pages/SearchResults';
 
 // Wrapper component so we can use useLocation() with Router
 function AppContent() {
@@ -29,6 +30,7 @@ function AppContent() {
         <Route path="*" element={<NotFound />} />	
 	<Route path="/browse" element={<Browse />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/search/:query" element={<SearchResults />} />
       </Routes>
     </>
   );
